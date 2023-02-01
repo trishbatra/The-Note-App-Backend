@@ -7,7 +7,7 @@ connectToMongo()
 const app = express()
 app.use(cors())
 app.use(express.json())
-const port = 5000
+const port = 5500
 app.use('/api/auth',  userRouter )
 app.use('/api/notes', notesRouter )
 app.get('/', (req, res) => {
